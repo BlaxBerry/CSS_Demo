@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider_pics</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        .box {
+            position: relative;
+            height: 544px;
+            width: 1088px;
+            box-shadow: 5px 5px 10px black;
+            overflow: hidden;
+        }
+        
+        li {
+            list-style: none;
+            float: left;
+        }
+        
+        ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* let ul be big enough */
+            width: 900%;
+            animation: slide 10s linear infinite;
+        }
+        
+        @keyframes slide {
+            0% {
+                left: 0
+            }
+            100% {
+                left: -3264px
+            }
+        }
+        
+        ul:hover {
+            animation-play-state: paused;
+        }
+        
+        ul:hover img {
+            opacity: 0.5;
+        }
+        
+        li:hover img {
+            opacity: 1;
+        }
+        
+        img {
+            transition: all 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <!-- start -->
+            <li><img src="images/01.jpeg"></li>
+            <li><img src="images/02.jpeg"></li>
+            <li><img src="images/03.jpeg"></li>
+            <li><img src="images/04.jpeg"></li>
+            <li><img src="images/05.jpeg"></li>
+            <li><img src="images/06.jpeg"></li>
+            <!-- end -->
+            <li><img src="images/01.jpeg"></li>
+            <li><img src="images/02.jpeg"></li>
+        </ul>
+    </div>
+</body>
+
+</html>
