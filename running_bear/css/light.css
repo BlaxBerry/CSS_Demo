@@ -1,0 +1,59 @@
+/*极光的样式*/
+
+.light {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+@keyframes lights {
+    0% {
+        opacity: 0;
+    }
+    14% {
+        opacity: 1;
+    }
+    28% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*极光的规律就是透明度的变化，运动时间为7s，每张图片的间隔是0.5s，所以要连贯起来，需要至少14张图片。*/
+
+.light-1 {
+    background: url(../images/bg-aurora-1.png) no-repeat center;
+    background-size: cover;
+    animation: lights 5s linear infinite;
+}
+
+.light-2 {
+    background: url(../images/bg-aurora-2.png) no-repeat center;
+    background-size: cover;
+    animation: lights 3s linear infinite;
+}
+
+.light-3 {
+    background: url(../images/bg-aurora-3.png) no-repeat center;
+    background-size: cover;
+    animation: lights 6s linear 1.2s infinite;
+}
+
+.light-4 {
+    background: url(../images/bg-aurora-4.png) no-repeat center;
+    background-size: cover;
+    animation: lights 3s linear 1.7s infinite;
+}
+
+.light-5 {
+    background: url(../images/bg-aurora-5.png) no-repeat center;
+    background-size: cover;
+    animation: lights 5s linear 2.2s infinite;
+}

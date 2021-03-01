@@ -1,0 +1,31 @@
+ /* bear */
+ 
+ #bear {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     z-index: 2222;
+     height: 100px;
+     width: 200px;
+     background: url(../images/bear.png) no-repeat;
+     animation: bearRun .7s steps(8) infinite, bearMove 4s linear forwards;
+ }
+ 
+ @keyframes bearRun {
+     0% {
+         background-position: 0 0;
+     }
+     100% {
+         background-position: -1600px;
+     }
+ }
+ 
+ @keyframes bearMove {
+     0% {
+         left: 0;
+     }
+     100% {
+         left: 50%;
+         transform: translateX(-50%);
+     }
+ }
