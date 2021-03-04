@@ -1,7 +1,8 @@
 # running bear
 CSS3 Animation
-![](./images/bear.png)
+![](./screenshort.png)
 ### bear
+![](./images/bear.png)
 move to the center of screen 
 ```css
 @keyframes bearMove {
