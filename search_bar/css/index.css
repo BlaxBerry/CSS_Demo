@@ -1,0 +1,53 @@
+body {
+    background-color: #db143ce6;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_2383639_321cse1ij8g.eot');
+    src: url('//at.alicdn.com/t/font_2383639_321cse1ij8g.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_2383639_321cse1ij8g.woff2') format('woff2'), url('//at.alicdn.com/t/font_2383639_321cse1ij8g.woff') format('woff'), url('//at.alicdn.com/t/font_2383639_321cse1ij8g.ttf') format('truetype'), url('//at.alicdn.com/t/font_2383639_321cse1ij8g.svg#iconfont') format('svg');
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #353535;
+}
+
+.main::after {
+    content: '\e631';
+    display: block;
+    font-family: 'iconfont';
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #dc143c;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #353535;
+    transition: all 1s;
+}
+
+.main .search {
+    outline: none;
+    border: 0;
+    width: 0;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+    transition: all 1s;
+}
+
+.main:hover .search {
+    width: 200px;
+    padding-left: 10px;
+}
+
+.main:hover::after {
+    background-color: #fff;
+}
