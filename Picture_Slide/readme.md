@@ -1,7 +1,6 @@
-# slider pics by CSS
+# Picture Slide
 without JavaScript, **only use CSS3**
 ![](./screenshort.png)
-![](https://cdn9.52xs.com.cn/d/article/20201127/253857.jpg)
 ##   seamless 无缝衔接
 ```html
  <ul>
@@ -17,6 +16,7 @@ without JavaScript, **only use CSS3**
             <li><img src="images/02.jpeg"></li>
         </ul>
 ```
+![](https://cdn9.52xs.com.cn/d/article/20201127/253857.jpg)
 ---
 
 ## animatin effects
