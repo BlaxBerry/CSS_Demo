@@ -1,6 +1,6 @@
 # running bear
 CSS3 Animation
-![](./screenshort.png)
+![](./screenshot.png)
 ### bear
 ![](./images/bear.png)
 move to the center of screen 
